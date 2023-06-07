@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+<style>
+	body {
+	margin: 0;
+	}
+    .background-gradient {
+	 --color1: rgba(0, 0, 255,1);
+	 --color2: 0, 0, 102;
+		width: 100vw;
+		height: 100vh;
+		
+		
+      min-height: 100%;
+      background-size: cover;
+      background:
+      /* https://www.gradientmagic.com/ */
+      linear-gradient(45deg, var(--color1), transparent),
+      linear-gradient(45deg, transparent, rgba(var(--color2),1)),
+      repeating-linear-gradient(45deg, rgba(var(--color2),0.5) 0%, rgba(var(--color2),1) 5%, transparent 5%, transparent 10%, rgba(var(--color2),1) 10%, rgba(var(--color2),0.5) 15%, transparent 15%, transparent 20%),
+      repeating-linear-gradient(-45deg, rgba(var(--color2),0.5) 0%, rgba(var(--color2),1) 5%, transparent 5%, transparent 10%, rgba(var(--color2),1) 10%, rgba(var(--color2),0.5) 15%, transparent 15%, transparent 20%);
+    }
+</style>
+<body class="background-gradient">
+</body>
+</html>
